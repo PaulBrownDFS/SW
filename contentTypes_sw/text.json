@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-v2.0.0/dist/contentTypes/text.json",
+  "id": "https://paulbrowndfs.github.io/SW/contentTypes_sw/text.json",
   "title": "Text Acclerator",
   "description": "Text Accelerator",
   "allOf": [
