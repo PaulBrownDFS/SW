@@ -1,0 +1,54 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-v2.0.0/dist/contentTypes/splitblock.json",
+  "title": "Split Block Accelerators",
+  "description": "Split Block Accelerator",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "propertyOrder": [
+    "content",
+    "split"
+  ],
+  "type": "object",
+  "properties": {
+    "content": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+          },
+          {
+            "properties": {
+              "contentType": {
+                "title": "content",
+                "enum": [
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-v2.0.0/dist/contentTypes/image.json",
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-v2.0.0/dist/contentTypes/video.json",
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-v2.0.0/dist/contentTypes/text.json"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "minItems": 2,
+      "maxItems": 2,
+      "title": "Content",
+      "description": ""
+    },
+    "split": {
+      "type": "string",
+      "enum": [
+        "50/50",
+        "70/30",
+        "30/70"
+      ],
+      "title": "Split Ratio",
+      "description": ""
+    }
+  }
+}

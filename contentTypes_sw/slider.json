@@ -1,0 +1,57 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-v2.0.0/dist/contentTypes/slider.json",
+  "title": "Slider Accelerator",
+  "description": "Slider Accelerator",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "propertyOrder": [
+    "slides",
+    "loadingColour",
+    "loadingPosition",
+    "loop",
+    "navigationDots"
+  ],
+  "type": "object",
+  "properties": {
+    "slides": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+          },
+          {
+            "properties": {
+              "contentType": {
+                "title": "slides",
+                "enum": [
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-v2.0.0/dist/contentTypes/banner.json",
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-v2.0.0/dist/contentTypes/image.json",
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-v2.0.0/dist/contentTypes/video.json"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "title": "Slides",
+      "description": "",
+      "minItems": 1,
+      "maxItems": 8
+    },
+    "loop": {
+      "type": "boolean",
+      "title": "Loop slider",
+      "description": ""
+    },
+    "navigationDots": {
+      "type": "boolean",
+      "title": "Navigation Dots",
+      "description": ""
+    }
+  }
+}
