@@ -1,26 +1,26 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "https://paulbrowndfs.github.io/SW/contentTypes_sw/link.json",
-  "title": "Link Accelerator",
-  "description": "Link Accelerator",
+  "title": "Link",
+  "description": "Link",
   "propertyOrder": [
-    "label",
-    "value"
+    "anchorText",
+    "hrefValue"
   ],
   "type": "object",
   "properties": {
-    "label": {
+    "anchorText": {
       "type": "string",
       "minLength": 0,
       "maxLength": 255,
-      "title": "Label",
+      "title": "Anchor Text",
       "description": ""
     },
-    "value": {
+    "hrefValue": {
       "type": "string",
       "minLength": 0,
       "maxLength": 2000,
-      "title": "Value",
+      "title": "Href Value",
       "description": "A relative URL, absolute URL or an ID"
     }
   }
