@@ -3,6 +3,7 @@
   "id": "https://paulbrowndfs.github.io/SW/contentTypes_sw/link.json",
   "title": "Link",
   "description": "Link",
+  "allOf": [{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }],
   "propertyOrder": [
     "anchorText",
     "hrefValue"
