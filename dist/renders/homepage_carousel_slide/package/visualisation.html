@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Banner</title>
+    <title>homepage_carousel_slide</title>
 
     <link rel="stylesheet"
           href="https://paulbrowndfs.github.io/SW/dist/renders/image/image.min.css"/>
     <link rel="stylesheet"
-          href="https://paulbrowndfs.github.io/SW/dist/renders/banner/banner.min.css"/>
+          href="https://paulbrowndfs.github.io/SW/dist/renders/homepage_carousel_slide/homepage_carousel_slide.min.css"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1">
     <style>
@@ -21,7 +21,7 @@
 </head>
 <body>
 
-<div class="js_banner_wrap"></div>
+<div class="js_homepage_carousel_slide_wrap"></div>
 
 
 <script src="https://paulbrowndfs.github.io/SW/dist/reusable/cms-javascript-sdk.min.js"></script>
@@ -29,8 +29,8 @@
 <script src="https://paulbrowndfs.github.io/SW/dist/reusable/utils.js"></script>
 <script src="https://paulbrowndfs.github.io/SW/dist/reusable/handlebars_helpers.js"></script>
 
-<script src="https://paulbrowndfs.github.io/SW/dist/renders/banner/acc-template-image.min.js"></script>
-<script src="https://paulbrowndfs.github.io/SW/dist/renders/banner/acc-template-banner.min.js"></script>
+<script src="https://paulbrowndfs.github.io/SW/dist/renders/homepage_carousel_slide/acc-template-image.min.js"></script>
+<script src="https://paulbrowndfs.github.io/SW/dist/renders/homepage_carousel_slide/acc-template-homepage_carousel_slide.min.js"></script>
 
 <script>
 
@@ -60,10 +60,10 @@
         url: getQueryVar(['vse', 'content']),
         callback: function (data) {
 
-            pbr = {};
+            var pbr = {};
             pbr.slideData = data[0];
-            var template = Handlebars.template(AmpCa.templates['acc-template-banner']);
-            document.querySelectorAll(".js_banner_wrap")[0].innerHTML = template(data[0]);
+            var template = Handlebars.template(AmpCa.templates['acc-template-homepage_carousel_slide']);
+            document.querySelectorAll(".js_homepage_carousel_slide_wrap")[0].innerHTML = template(data[0]);
         },
         formatData: function (data) {
             return amp.inlineContent(JSON.parse(data));
