@@ -60,6 +60,8 @@
         url: getQueryVar(['vse', 'content']),
         callback: function (data) {
 
+            pbr = {};
+            pbr.slideData = data[0];
             var template = Handlebars.template(AmpCa.templates['acc-template-banner']);
             document.querySelectorAll(".js_banner_wrap")[0].innerHTML = template(data[0]);
         },
