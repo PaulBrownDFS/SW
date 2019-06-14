@@ -1,3 +1,121 @@
+@charset "UTF-8";
+/**
+ * @license
+ * MyFonts Webfont Build ID 3582040, 2018-05-17T06:18:38-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: URWGroteskNar-Reg by URW
+ * URL: https://www.myfonts.com/fonts/urw/grotesk/urw-grotesk-t-regular-narrow/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * Licensed pageviews: 20,000
+ * 
+ * Webfont: URWGrotesk-Med by URW
+ * URL: https://www.myfonts.com/fonts/urw/grotesk/urw-grotesk-t-medium/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * Licensed pageviews: 20,000
+ * 
+ * Webfont: URWGroteskCon-Lig by URW
+ * URL: https://www.myfonts.com/fonts/urw/grotesk/urw-grotesk-t-light-condensed/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * Licensed pageviews: 40,000
+ * 
+ * Webfont: URWGrotesk-Reg by URW
+ * URL: https://www.myfonts.com/fonts/urw/grotesk/urw-grotesk-t-regular/
+ * Copyright: (URW)++,Copyright 2007 by (URW)++ Design &amp; Development
+ * Licensed pageviews: 20,000
+ * 
+ * Webfont: URWGrotesk-Lig by URW
+ * URL: https://www.myfonts.com/fonts/urw/grotesk/urw-grotesk-t-light/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * Licensed pageviews: 20,000
+ * 
+ * Webfont: URWGroteskNar-Med by URW
+ * URL: https://www.myfonts.com/fonts/urw/grotesk/urw-grotesk-t-medium-narrow/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * Licensed pageviews: 20,000
+ * 
+ * Webfont: URWGroteskCon-Bol by URW
+ * URL: https://www.myfonts.com/fonts/urw/grotesk/urw-grotesk-t-bold-condensed/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * Licensed pageviews: 20,000
+ * 
+ * Webfont: URWGrotesk-Bol by URW
+ * URL: https://www.myfonts.com/fonts/urw/grotesk/urw-grotesk-t-bold/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * Licensed pageviews: 20,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3582040
+ * 
+ * © 2018 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/36a858");
+@font-face {
+  font-family: 'URWGroteskNar-Reg';
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_0_0.eot");
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_0_0.eot?#iefix") format("embedded-opentype"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_0_0.woff2") format("woff2"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_0_0.woff") format("woff"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_0_0.ttf") format("truetype"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_0_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: 'URWGrotesk-Med';
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_1_0.eot");
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_1_0.eot?#iefix") format("embedded-opentype"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_1_0.woff2") format("woff2"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_1_0.woff") format("woff"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_1_0.ttf") format("truetype"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_1_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: 'URWGroteskCon-Lig';
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_2_0.eot");
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_2_0.eot?#iefix") format("embedded-opentype"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_2_0.woff2") format("woff2"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_2_0.woff") format("woff"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_2_0.ttf") format("truetype"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_2_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: 'URWGrotesk-Reg';
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_3_0.eot");
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_3_0.eot?#iefix") format("embedded-opentype"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_3_0.woff2") format("woff2"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_3_0.woff") format("woff"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_3_0.ttf") format("truetype"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_3_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: 'URWGrotesk-Lig';
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_4_0.eot");
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_4_0.eot?#iefix") format("embedded-opentype"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_4_0.woff2") format("woff2"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_4_0.woff") format("woff"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_4_0.ttf") format("truetype"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_4_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: 'URWGroteskNar-Med';
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_5_0.eot");
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_5_0.eot?#iefix") format("embedded-opentype"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_5_0.woff2") format("woff2"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_5_0.woff") format("woff"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_5_0.ttf") format("truetype"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_5_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: 'URWGroteskCon-Bol';
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_6_0.eot");
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_6_0.eot?#iefix") format("embedded-opentype"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_6_0.woff2") format("woff2"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_6_0.woff") format("woff"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_6_0.ttf") format("truetype"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_6_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: 'URWGrotesk-Bol';
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_7_0.eot");
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_7_0.eot?#iefix") format("embedded-opentype"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_7_0.woff2") format("woff2"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_7_0.woff") format("woff"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_7_0.ttf") format("truetype"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/36A858_7_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: "NewBaskervilleW01-Roman";
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/6f8d5d3a-3676-4586-b129-13ecdaabbbc0.eot?#iefix");
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/6f8d5d3a-3676-4586-b129-13ecdaabbbc0.eot?#iefix") format("eot"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/bc1790d7-cfa9-4990-a053-959c34ee137d.woff2") format("woff2"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/d34e3a5a-59f6-4d14-b0a8-54a75a3adfae.woff") format("woff"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/e9ccb09b-59c7-44be-b649-dffa01b3ac54.ttf") format("truetype"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/013cba0b-1605-4164-8b58-7c77b084d5bc.svg#013cba0b-1605-4164-8b58-7c77b084d5bc") format("svg");
+}
+
+@font-face {
+  font-family: "NewBaskervilleW01-Itali";
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/7055b210-8d54-4a81-bcc1-927fb48b5af8.eot?#iefix");
+  src: url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/7055b210-8d54-4a81-bcc1-927fb48b5af8.eot?#iefix") format("eot"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/1e4af2bf-92c8-4750-8875-85a1fd275cad.woff2") format("woff2"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/b74f9e80-f9c2-45b4-9d5d-7f3aba245e3d.woff") format("woff"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/22b7afa3-0619-4c9c-b91f-22978be3f21f.ttf") format("truetype"), url("https://www.stage.uat2.sofaworkshop.com/wcsstore/SofaWorkShopAssetStore/static/css/compiled/webfonts/70b35ac5-da0e-4238-87ce-f67818f47e8e.svg#70b35ac5-da0e-4238-87ce-f67818f47e8e") format("svg");
+}
+
 section#HPCarousel {
   position: relative;
   max-width: 1440px;
