@@ -4,6 +4,14 @@ section#HPCarousel {
   margin: 0 auto;
 }
 
+section#HPCarousel  .slide-button.inline-button a {
+  text-decoration: none;
+}
+
+.slide-text-1 h2 span {
+  font-family: 'NewBaskervilleW01-Itali';
+}
+
 #HPCarousel  div .overlay-container .slide-overlay .slide-text-1,
  div .overlay-container .slide-overlay .slide-text-1 h2 {
   font-size: 3rem;
