@@ -2,5 +2,5 @@
   "CONTENT_TYPE_BASEPATH": "https://paulbrowndfs.github.io/SW/contentTypes_sw",
   "COMPANY_TAG": "any",
   "VISUALIZATION_BASEPATH": "https://paulbrowndfs.github.io/SW/dist",
-  "VISUALIZATION_BASEPATH_LCOAL": "http://127.0.0.1:9100/dist/"
+  "VISUALIZATION_BASEPATH_LOCAL": "http://127.0.0.1:9100/dist/"
 }
