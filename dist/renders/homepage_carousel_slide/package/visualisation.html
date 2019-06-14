@@ -60,7 +60,7 @@
         url: getQueryVar(['vse', 'content']),
         callback: function (data) {
 
-            var pbr = {};
+            pbr = {};
             pbr.slideData = data[0];
             var template = Handlebars.template(AmpCa.templates['acc-template-homepage_carousel_slide']);
             document.querySelectorAll(".js_homepage_carousel_slide_wrap")[0].innerHTML = template(data[0]);
