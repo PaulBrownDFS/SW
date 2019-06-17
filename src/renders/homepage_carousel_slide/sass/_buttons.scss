@@ -2,7 +2,22 @@
 #HPCarousel div .overlay-container .slide-overlay .slide-button.buttonStyle_1 {
   background: #fff;
 }
-
+#HPCarousel div .overlay-container .slide-overlay .slide-button.buttonStyle_1 a {
+  color: #000;
+}
 #HPCarousel div .overlay-container .slide-overlay .slide-button.buttonStyle_1:hover {
   background: #aaa;
+}
+
+/* Button Style 2 */
+#HPCarousel div .overlay-container .slide-overlay .slide-button.buttonStyle_2 {
+  background: #000;
+}
+
+#HPCarousel div .overlay-container .slide-overlay .slide-button.buttonStyle_2 a {
+  color: #fff;
+}
+
+#HPCarousel div .overlay-container .slide-overlay .slide-button.buttonStyle_2:hover {
+  background: #222;
 }

@@ -137,6 +137,7 @@ div .overlay-container .slide-overlay .slide-text-1 h2 {
   font-family: "URWGrotesk-Med";
   letter-spacing: 1px;
   margin: 0;
+  padding: 0 30px;
   color: #fff;
 }
 
@@ -144,17 +145,7 @@ div .overlay-container .slide-overlay .slide-text-1 h2 {
   position: absolute;
   text-align: left;
   z-index: 11;
-  width: 85%;
-}
-
-#HPCarousel div .overlay-container .slide-overlay .slide-text-1,
-div .overlay-container .slide-overlay .slide-text-1 h2 {
-  font-size: 3.5rem;
-  line-height: 3.5rem;
-  font-family: "URWGrotesk-Med";
-  letter-spacing: 1px;
-  margin: 0;
-  color: #fff;
+  width: auto;
 }
 
 #HPCarousel div .overlay-container .slide-overlay .slide-text-2 h4 {
@@ -162,6 +153,7 @@ div .overlay-container .slide-overlay .slide-text-1 h2 {
   line-height: 1.5rem;
   font-family: "URWGrotesk-Reg";
   margin: 10px 0 30px;
+  padding: 0 30px;
 }
 
 #HPCarousel div .overlay-container .slide-overlay .slide-button {
@@ -231,6 +223,23 @@ div .overlay-container .slide-overlay .slide-text-1 h2 {
   background: #fff;
 }
 
+#HPCarousel div .overlay-container .slide-overlay .slide-button.buttonStyle_1 a {
+  color: #000;
+}
+
 #HPCarousel div .overlay-container .slide-overlay .slide-button.buttonStyle_1:hover {
   background: #aaa;
+}
+
+/* Button Style 2 */
+#HPCarousel div .overlay-container .slide-overlay .slide-button.buttonStyle_2 {
+  background: #000;
+}
+
+#HPCarousel div .overlay-container .slide-overlay .slide-button.buttonStyle_2 a {
+  color: #fff;
+}
+
+#HPCarousel div .overlay-container .slide-overlay .slide-button.buttonStyle_2:hover {
+  background: #222;
 }
