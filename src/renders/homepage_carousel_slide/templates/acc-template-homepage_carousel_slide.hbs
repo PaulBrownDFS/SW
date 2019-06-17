@@ -2,21 +2,23 @@
     <div class="container p-0">
         <div class="row">
             <div class="col-12">
-                <div id="owl-1" class="owl-carousel owl-carousel-hero">
+                <div id="{{#if cssStyle}}{{cssStyle}}{{else}}owl-1{{/if}}" class="owl-carousel owl-carousel-hero">
                     <div class="slide">
                         <div class="overlay-container">
                             <div class="slide-overlay">
                                 <div class="slide-text-1">
-                                    <h2>{{{header}}}</h2>
+                                    <h2{{#if textColour}} style="color:{{textColour}}"{{/if}}>{{{header}}}</h2>
                                 </div>
-                                <div class="slide-text-2">{{{subheader}}} »</div>
-                                <div class="slide-button inline-button">
+                                <div class="slide-text-2">
+                                <h4 {{#if textColour}} style="color:{{textColour}}"{{/if}}>{{{subheader}}} »</h4>
+                                </div>
+                                <div class="slide-button inline-button {{#if buttonStyle}}{{buttonStyle}}{{else}}defaultBtn{{/if}}" >
                                     <a href="{{button.hrefValue}}">{{button.anchorText}}</a>
                                 </div>
                             </div>
                         </div>
 
-                        <a href="/">
+                        <a href="{{button.hrefValue}}">
                         {{templateChooser slideImage}}
                         </a>
                         
@@ -27,3 +29,10 @@
         </div>
     </div>
 </section>
+
+<style>
+#HPCarousel  div .overlay-container .slide-overlay {
+  bottom: {{#if textPositionBottom}}{{textPositionBottom}}px;{{else}}125px;{{/if}}
+  left: {{#if textPositionLeft}}{{textPositionLeft}}px;{{else}}125px;{{/if}}
+}
+</style>

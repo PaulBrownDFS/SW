@@ -1,13 +1,14 @@
-<picture> 
+<picture>
+    <!-- addTemplateClassname.data.root .xxxx = parent context-->
     <source class="owl-lazy" media="(max-width: 399px)"
         srcset="https://{{image.defaultHost}}/i/sw/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-            seoText}}{{/if}}?w=400&pecrop=1000,0,300,0">
+            seoText}}{{/if}}?w=400{{#if addTemplateClassname.data.root.mobileAttributesExSmall}}&{{addTemplateClassname.data.root.mobileAttributesExSmall}}{{/if}}">
     <source class="owl-lazy" media="(max-width: 575px)"
         srcset="https://{{image.defaultHost}}/i/sw/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-            seoText}}{{/if}}?w=576&pecrop=1000,0,300,0">
+            seoText}}{{/if}}?w=576{{#if addTemplateClassname.data.root.mobileAttributesSmall}}&{{addTemplateClassname.data.root.mobileAttributesSmall}}{{/if}}">
     <source class="owl-lazy" media="(max-width: 767px)"
         srcset="https://{{image.defaultHost}}/i/sw/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-            seoText}}{{/if}}?w=768&pecrop=1000,0,300,0">
+            seoText}}{{/if}}?w=768{{#if addTemplateClassname.data.root.tabletAttributes}}&{{addTemplateClassname.data.root.tabletAttributes}}{{/if}}">
     <source class="owl-lazy" media="(max-width: 991px)"
         srcset="https://{{image.defaultHost}}/i/sw/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
             seoText}}{{/if}}?w=992">
@@ -26,5 +27,5 @@
 
     <img class="owl-lazy" src="https://{{image.defaultHost}}/i/sw/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
             seoText}}{{/if}}?w=1440"
-        alt="Spend And Save">
+        alt="{{imageAltText}}">
 </picture>

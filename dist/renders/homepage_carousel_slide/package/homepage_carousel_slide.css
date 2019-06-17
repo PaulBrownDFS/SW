@@ -142,9 +142,7 @@ div .overlay-container .slide-overlay .slide-text-1 h2 {
 
 #HPCarousel div .overlay-container .slide-overlay {
   position: absolute;
-  bottom: 125px;
   text-align: left;
-  left: 8%;
   z-index: 11;
   width: 85%;
 }
@@ -159,18 +157,16 @@ div .overlay-container .slide-overlay .slide-text-1 h2 {
   color: #fff;
 }
 
-#HPCarousel div .overlay-container .slide-overlay .slide-text-2 {
+#HPCarousel div .overlay-container .slide-overlay .slide-text-2 h4 {
   font-size: 1.5rem;
-  color: #fff;
   line-height: 1.5rem;
   font-family: "URWGrotesk-Reg";
-  margin: 20px 0;
+  margin: 10px 0 30px;
 }
 
 #HPCarousel div .overlay-container .slide-overlay .slide-button {
-  background: #FFF;
+  background: #fff;
   width: 220px;
-  font-family: "URWGrotesk-Reg";
   text-align: center;
   margin: 0 0;
   position: relative;
@@ -187,6 +183,7 @@ div .overlay-container .slide-overlay .slide-text-1 h2 {
   padding: 15px 0;
   font-size: 1.15rem;
   letter-spacing: 0.1em;
+  font-family: URWGrotesk-Reg;
   text-transform: uppercase;
   display: block;
 }
@@ -214,14 +211,6 @@ div .overlay-container .slide-overlay .slide-text-1 h2 {
 }
 
 @media screen and (max-width: 767px) {
-  #HPCarousel div .overlay-container .slide-overlay {
-    position: absolute;
-    bottom: 10%;
-    left: 7.5%;
-    text-align: center;
-    z-index: 11;
-    width: 85%;
-  }
   #HPCarousel div .overlay-container .slide-overlay .slide-button {
     background: #FFF;
     width: 220px;
@@ -230,4 +219,18 @@ div .overlay-container .slide-overlay .slide-text-1 h2 {
     position: relative;
     margin: 0 auto;
   }
+  #HPCarousel div .overlay-container .slide-overlay {
+    bottom: 10%;
+    left: 7.5%;
+    text-align: center;
+  }
+}
+
+/* Button Style 1 */
+#HPCarousel div .overlay-container .slide-overlay .slide-button.buttonStyle_1 {
+  background: #fff;
+}
+
+#HPCarousel div .overlay-container .slide-overlay .slide-button.buttonStyle_1:hover {
+  background: #aaa;
 }

@@ -24,9 +24,7 @@ section#HPCarousel  .slide-button.inline-button a {
 
 #HPCarousel  div .overlay-container .slide-overlay {
   position: absolute;
-  bottom: 125px;
   text-align: left;
-  left: 8%;
   z-index: 11;
   width: 85%;
 }
@@ -41,18 +39,16 @@ section#HPCarousel  .slide-button.inline-button a {
   color: #fff;
 }
 
-#HPCarousel  div .overlay-container .slide-overlay .slide-text-2 {
+#HPCarousel  div .overlay-container .slide-overlay .slide-text-2 h4 {
   font-size: 1.5rem;
-  color: #fff;
   line-height: 1.5rem;
   font-family: "URWGrotesk-Reg";
-  margin: 20px 0;
+  margin: 10px 0 30px;
 }
 
 #HPCarousel  div .overlay-container .slide-overlay .slide-button {
-  background: #FFF;
+  background: #fff;
   width: 220px;
-  font-family: "URWGrotesk-Reg";
   text-align: center;
   margin: 0 0;
   position: relative;
@@ -68,6 +64,7 @@ section#HPCarousel  .slide-button.inline-button a {
   padding: 15px 0;
   font-size: 1.15rem;
   letter-spacing: 0.1em;
+  font-family: URWGrotesk-Reg;
   text-transform: uppercase;
   display: block;
 }
@@ -99,15 +96,6 @@ section#HPCarousel  .slide-button.inline-button a {
 
 @media screen and (max-width: 767px) {
 
-  #HPCarousel  div .overlay-container .slide-overlay {
-    position: absolute;
-    bottom: 10%;
-    left: 7.5%;
-    text-align: center;
-    z-index: 11;
-    width: 85%;
-  }
-
   #HPCarousel  div .overlay-container .slide-overlay .slide-button {
     background: #FFF;
     width: 220px;
@@ -115,5 +103,11 @@ section#HPCarousel  .slide-button.inline-button a {
     text-align: center;
     position: relative;
     margin: 0 auto;
+  }
+
+    #HPCarousel div .overlay-container .slide-overlay {
+      bottom: 10%;
+      left: 7.5%;
+      text-align: center;
   }
 }

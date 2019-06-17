@@ -362,6 +362,10 @@
                 }
             });
 
+            Handlebars.registerHelper('json', function (context) {
+                return JSON.stringify(context);
+            });
+
             Handlebars.registerHelper('roundelProperties', function (opts) {
                 if (
                     this.roundel &&
