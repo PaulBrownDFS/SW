@@ -19,7 +19,6 @@ section#HPCarousel  .slide-button.inline-button a {
   font-family: "URWGrotesk-Med";
   letter-spacing: 1px;
   margin: 0;
-  padding: 0 30px;
   color: #fff;
 }
 
@@ -27,6 +26,7 @@ section#HPCarousel  .slide-button.inline-button a {
   position: absolute;
   text-align: left;
   z-index: 11;
+  padding: 0 30px;
   width: auto;
 }
 
@@ -36,7 +36,6 @@ section#HPCarousel  .slide-button.inline-button a {
   line-height: 1.5rem;
   font-family: "URWGrotesk-Reg";
   margin: 10px 0 30px;
-  padding:0 30px;
 }
 
 #HPCarousel  div .overlay-container .slide-overlay .slide-button {
