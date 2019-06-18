@@ -1,6 +1,9 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "https://paulbrowndfs.github.io/SW/contentTypes_sw/roundel.json",
+  "allOf": [{
+    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+  }],
   "title": "Roundel",
   "description": "Roundel Accelerator",
   "propertyOrder": [
