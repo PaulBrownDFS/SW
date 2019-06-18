@@ -26,6 +26,13 @@
       "title": "Roundel Position",
       "description": "Roundel Position"
     },
+    "roundelSize": {
+      "type": "number",
+      "minimum": 50,
+      "maximum": 1000,
+      "title": "Roundel Size Over-Ride",
+      "description": "Override Roundel Default Image Size"
+    },
     "XAxisOffset": {
       "type": "number",
       "minimum": -1000,
