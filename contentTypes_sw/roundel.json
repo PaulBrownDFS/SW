@@ -5,20 +5,12 @@
   "description": "Roundel Accelerator",
   "propertyOrder": [
     "roundel",
-    "roundelRatio",
     "roundelPosition"
   ],
   "type": "object",
   "properties": {
     "roundel": {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
-    },
-    "roundelRatio": {
-      "type": "number",
-      "title": "Roundel Ratio",
-      "description": "A value between 0 and 10 e.g. 0.6",
-      "minimum": 0,
-      "maximum": 10
     },
     "roundelPosition": {
       "type": "string",
@@ -30,6 +22,20 @@
       ],
       "title": "Roundel Position",
       "description": "Roundel Position"
+    },
+    "XAxisOffset": {
+      "type": "number",
+      "minimum": -1000,
+      "maximum": 1000,
+      "title": "Left / Right offset in px",
+      "description": "Roundel Horizontal Positioning Offset Based On The Above Positioning."
+    },
+    "YAxisOffset": {
+      "type": "number",
+      "minimum": -1000,
+      "maximum": 1000,
+      "title": "Top / Bottom offset in px",
+      "description": "Roundel VerticalPositioning Offset Based On The Above Positioning."
     }
   }
 }
