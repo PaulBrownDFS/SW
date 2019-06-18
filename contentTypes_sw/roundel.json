@@ -30,14 +30,14 @@
       "type": "number",
       "minimum": -1000,
       "maximum": 1000,
-      "title": "Left / Right offset in px",
+      "title": "Left / Right offset in %",
       "description": "Roundel Horizontal Positioning Offset Based On The Above Positioning."
     },
     "YAxisOffset": {
       "type": "number",
       "minimum": -1000,
       "maximum": 1000,
-      "title": "Top / Bottom offset in px",
+      "title": "Top / Bottom offset in %",
       "description": "Roundel VerticalPositioning Offset Based On The Above Positioning."
     }
   }
