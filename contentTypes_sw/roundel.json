@@ -8,14 +8,14 @@
   "description": "Roundel Accelerator",
   "propertyOrder": [
     "roundel",
-    "roundelPosition"
+    "roundelPosition_d"
   ],
   "type": "object",
   "properties": {
     "roundel": {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
     },
-    "roundelPosition": {
+    "roundelPosition_d": {
       "type": "string",
       "enum": [
         "TL",
@@ -23,28 +23,60 @@
         "BL",
         "BR"
       ],
-      "title": "Roundel Position",
+      "title": "Desktop Roundel Position",
       "description": "Roundel Position Top Left, Top Right, Bottom Left, Bottom Right"
     },
-    "roundelSize": {
+    "roundelSize_d": {
       "type": "number",
       "minimum": 50,
       "maximum": 1000,
-      "title": "Roundel Size Over-Ride",
+      "title": "Desktop Roundel Size Over-Ride",
       "description": "Override Roundel Default Image Size"
     },
-    "XAxisOffset": {
+    "XAxisOffset_d": {
       "type": "number",
       "minimum": -1000,
       "maximum": 1000,
-      "title": "Left / Right offset in %",
+      "title": "Desktop Left / Right offset in %",
       "description": "Roundel Horizontal Positioning Offset Based On The Above Positioning."
     },
-    "YAxisOffset": {
+    "YAxisOffset_d": {
       "type": "number",
       "minimum": -1000,
       "maximum": 1000,
-      "title": "Top / Bottom offset in %",
+      "title": "Desktop Top / Bottom offset in %",
+      "description": "Roundel VerticalPositioning Offset Based On The Above Positioning."
+    },
+    "roundelPosition_m": {
+      "type": "string",
+      "enum": [
+        "TL",
+        "TR",
+        "BL",
+        "BR"
+      ],
+      "title": "Mobile Roundel Position",
+      "description": "Roundel Position Top Left, Top Right, Bottom Left, Bottom Right"
+    },
+    "roundelSize_m": {
+      "type": "number",
+      "minimum": 50,
+      "maximum": 1000,
+      "title": "Mobile Roundel Size Over-Ride",
+      "description": "Override Roundel Default Image Size"
+    },
+    "XAxisOffset_m": {
+      "type": "number",
+      "minimum": -1000,
+      "maximum": 1000,
+      "title": "Mobile Left / Right offset in %",
+      "description": "Roundel Horizontal Positioning Offset Based On The Above Positioning."
+    },
+    "YAxisOffset_m": {
+      "type": "number",
+      "minimum": -1000,
+      "maximum": 1000,
+      "title": "Desktop Top / Bottom offset in %",
       "description": "Roundel VerticalPositioning Offset Based On The Above Positioning."
     }
   }
