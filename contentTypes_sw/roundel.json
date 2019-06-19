@@ -8,7 +8,14 @@
   "description": "Roundel Accelerator",
   "propertyOrder": [
     "roundel",
-    "roundelPosition_d"
+    "roundelPosition_d",
+    "roundelSize_d",
+    "XAxisOffset_d",
+    "YAxisOffset_d",
+    "roundelPosition_m",
+    "roundelSize_m",
+    "XAxisOffset_m",
+    "YAxisOffset_m"
   ],
   "type": "object",
   "properties": {
