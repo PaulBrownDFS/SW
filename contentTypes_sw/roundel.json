@@ -18,13 +18,13 @@
     "roundelPosition": {
       "type": "string",
       "enum": [
-        "Top Left",
-        "Top Right",
-        "Bottom Left",
-        "Bottom Right"
+        "TL",
+        "TR",
+        "BL",
+        "BR"
       ],
       "title": "Roundel Position",
-      "description": "Roundel Position"
+      "description": "Roundel Position Top Left, Top Right, Bottom Left, Bottom Right"
     },
     "roundelSize": {
       "type": "number",
