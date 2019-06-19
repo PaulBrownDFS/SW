@@ -28,7 +28,8 @@
         "top left",
         "top right",
         "bottom left",
-        "bottom right"
+        "bottom right",
+        "middle center"
       ],
       "title": "Desktop Roundel Position",
       "description": "Roundel Position Top Left, Top Right, Bottom Left, Bottom Right"
@@ -60,7 +61,8 @@
         "top left",
         "top right",
         "bottom left",
-        "bottom right"
+        "bottom right",
+        "middle center"
       ],
       "title": "Mobile Roundel Position",
       "description": "Roundel Position Top Left, Top Right, Bottom Left, Bottom Right"
