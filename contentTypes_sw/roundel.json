@@ -25,10 +25,10 @@
     "roundelPosition_d": {
       "type": "string",
       "enum": [
-        "TL",
-        "TR",
-        "BL",
-        "BR"
+        "top left",
+        "top right",
+        "bottom left",
+        "bottom right"
       ],
       "title": "Desktop Roundel Position",
       "description": "Roundel Position Top Left, Top Right, Bottom Left, Bottom Right"
@@ -57,10 +57,10 @@
     "roundelPosition_m": {
       "type": "string",
       "enum": [
-        "TL",
-        "TR",
-        "BL",
-        "BR"
+        "top left",
+        "top right",
+        "bottom left",
+        "bottom right"
       ],
       "title": "Mobile Roundel Position",
       "description": "Roundel Position Top Left, Top Right, Bottom Left, Bottom Right"
