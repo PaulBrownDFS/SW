@@ -83,7 +83,7 @@
       "type": "number",
       "minimum": -1000,
       "maximum": 1000,
-      "title": "MobileTop / Bottom offset in %",
+      "title": "Mobile Top / Bottom offset in %",
       "description": "Roundel VerticalPositioning Offset Based On The Above Positioning."
     }
   }
