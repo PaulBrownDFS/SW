@@ -368,9 +368,13 @@
 
             Handlebars.registerHelper('getRoundelAnchor', function (roundel, context, device) {
 
+                if(typeof(roundel) === 'undefined') {
+                    return false;
+                }
+
                 var roundelParams = '&layer1=[anchor=';
                 
-;                if(device == 'mobile') {
+                if(device == 'mobile') {
 
                     // Mobile & Smaller Screen Tablets 
 
@@ -380,8 +384,8 @@
 
                         // Add offsets positioning..
 
-                        roundelParams += '&' + (roundelPos[0] !== 'middle' ? roundelPos[0] : 'left') + '=' + roundel.XAxisOffset_m + '%';
-                        roundelParams += '&' + (roundelPos[1] !== 'center' ? roundelPos[1] : 'top') + '=' + roundel.YAxisOffset_m + '%';
+                        roundelParams += '&' + (roundelPos[0] !== 'middle' ? roundelPos[0] : 'top') + '=' + roundel.YAxisOffset_m + '%';
+                        roundelParams += '&' + (roundelPos[1] !== 'center' ? roundelPos[1] : 'left') + '=' + roundel.XAxisOffset_m + '%';
 
                         // add roundel image src
 
@@ -408,8 +412,8 @@
 
                          // Add offsets positioning..
 
-                         roundelParams += '&' + (roundelPos[0] !== 'middle' ? roundelPos[0]  :  'top') +'=' + roundel.XAxisOffset_d + '%';
-                         roundelParams += '&' + (roundelPos[1] !== 'center' ? roundelPos[1]  : 'left') +'=' + roundel.YAxisOffset_d + '%';
+                         roundelParams += '&' + (roundelPos[0] !== 'middle' ? roundelPos[0]  :  'top') +'=' + roundel.YAxisOffset_d + '%';
+                         roundelParams += '&' + (roundelPos[1] !== 'center' ? roundelPos[1]  : 'left') +'=' + roundel.XAxisOffset_d + '%';
 
                          // add roundel image src
 
