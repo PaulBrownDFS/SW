@@ -1,113 +1,23 @@
-<picture class="amp-dc-image">
-    {{#roundelProperties}}
-        <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                seoText}}{{/if}}.webp?w=1600&$roundel$&{{roundelConfig
-                roundel}} 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if
-                seoText}}/{{escapeUrl seoText}}{{/if}}.webp?w=3200&$roundel$&{{roundelConfig roundel}} 2x"
-                media="(min-width: 1280px)"
-                type="image/webp">
-        <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                seoText}}{{/if}}?w=1600&$roundel$&{{roundelConfig
-                roundel}} 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if
-                seoText}}/{{escapeUrl seoText}}{{/if}}?w=3200&$roundel$&{{roundelConfig roundel}} 2x"
-                media="(min-width: 1280px)">
+<section class="ampImageWrapper">
+        <picture>
+                <source class="owl-lazy" media="(max-width: 399px)" srcset="https://{{image.defaultHost}}/i/sw/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
+                seoText}}{{/if}}?w=400{{#getRoundelAnchor roundel.0. "mobile"}}{{/getRoundelAnchor}}">
+                <source class="owl-lazy" media="(max-width: 575px)" srcset="https://{{image.defaultHost}}/i/sw/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
+                seoText}}{{/if}}?w=576{{#getRoundelAnchor roundel.0. "mobile"}}{{/getRoundelAnchor}}">
+                <source class="owl-lazy" media="(max-width: 767px)" srcset="https://{{image.defaultHost}}/i/sw/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
+                seoText}}{{/if}}?w=768{{#getRoundelAnchor roundel.0. "mobile"}}{{/getRoundelAnchor}}">
+                <source class="owl-lazy" media="(max-width: 991px)" srcset="https://{{image.defaultHost}}/i/sw/{{escapeUrl image.name}}_1440{{#if seoText}}/{{escapeUrl
+                seoText}}{{/if}}?w=992{{#getRoundelAnchor roundel.0. "desktop"}}{{/getRoundelAnchor}}">
+                <source class="owl-lazy" media="(max-width: 1199px)" srcset="https://{{image.defaultHost}}/i/sw/{{escapeUrl image.name}}_1440{{#if seoText}}/{{escapeUrl
+                seoText}}{{/if}}?w=1200{{#getRoundelAnchor roundel.0. "desktop"}}{{/getRoundelAnchor}}">
+                <source class="owl-lazy" media="(max-width: 1439px)" srcset="https://{{image.defaultHost}}/i/sw/{{escapeUrl image.name}}_1440{{#if seoText}}/{{escapeUrl
+                seoText}}{{/if}}?w=1440{{#getRoundelAnchor roundel.0. "desktop"}}{{/getRoundelAnchor}}">
+                <source class="owl-lazy" media="(max-width: 2399px)" src-retina="https://{{image.defaultHost}}/i/sw/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
+                seoText}}{{/if}}?w=2400{{#getRoundelAnchor roundel.0. "desktop"}}{{/getRoundelAnchor}}">
+                <source class="owl-lazy" media="(max-width: 3039px)" src-retina="https://{{image.defaultHost}}/i/sw/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
+                seoText}}{{/if}}?w=3040{{#getRoundelAnchor roundel.0. "desktop"}}{{/getRoundelAnchor}}">
 
-        <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                seoText}}{{/if}}.webp?w=1280&$roundel$&{{roundelConfig
-                roundel}} 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if
-                seoText}}/{{escapeUrl seoText}}{{/if}}.webp?w=2560&$roundel$&{{roundelConfig roundel}} 2x"
-                media="(min-width: 1024px)"
-                type="image/webp">
-        <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                seoText}}{{/if}}?w=1280&$roundel$&{{roundelConfig
-                roundel}} 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if
-                seoText}}/{{escapeUrl seoText}}{{/if}}?w=2560&$roundel$&{{roundelConfig roundel}} 2x"
-                media="(min-width: 1024px)">
-
-        <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                seoText}}{{/if}}.webp?w=1024&$roundel$&{{roundelConfig
-                roundel}} 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if
-                seoText}}/{{escapeUrl seoText}}{{/if}}.webp?w=2048&$roundel$&{{roundelConfig roundel}} 2x"
-                media="(min-width: 768px)"
-                type="image/webp">
-        <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                seoText}}{{/if}}?w=1024&$roundel$&{{roundelConfig
-                roundel}} 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if
-                seoText}}/{{escapeUrl seoText}}{{/if}}?w=2048&$roundel$&{{roundelConfig roundel}} 2x"
-                media="(min-width: 768px)">
-
-        <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                seoText}}{{/if}}.webp?w=768&$roundel$&{{roundelConfig
-                roundel}} 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if
-                seoText}}/{{escapeUrl seoText}}{{/if}}.webp?w=1536&$roundel$&{{roundelConfig roundel}} 2x"
-                media="(max-width: 768px)"
-                type="image/webp">
-        <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                seoText}}{{/if}}?w=768&$roundel$&{{roundelConfig
-                roundel}} 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if
-                seoText}}/{{escapeUrl seoText}}{{/if}}?w=1536&$roundel$&{{roundelConfig roundel}} 2x"
-                media="(max-width: 768px)">
-
-        <img src="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                seoText}}{{/if}}?w=1600&$roundel$&{{roundelConfig roundel}}"
-             srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                     seoText}}{{/if}}.webp?w=1600&$roundel$&{{roundelConfig
-                     roundel}} 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if
-                     seoText}}/{{escapeUrl seoText}}{{/if}}.webp?w=3200&$roundel$&{{roundelConfig roundel}} 2x,
-             //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                     seoText}}{{/if}}?w=1600&$roundel$&{{roundelConfig
-                     roundel}} 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if
-                     seoText}}/{{escapeUrl seoText}}{{/if}}?w=3200&$roundel$&{{roundelConfig roundel}} 2x"
-             class="amp-dc-image-pic" {{#if imageAltText}} alt="{{imageAltText}}" {{/if}}/>
-    {{else}}
-        <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                seoText}}{{/if}}.webp?w=1600 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl
-                image.name}}{{#if seoText}}/{{escapeUrl seoText}}{{/if}}.webp?w=3200 2x"
-                media="(min-width: 1280px)"
-                type="image/webp">
-        <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                seoText}}{{/if}}?w=1600 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if
-                seoText}}/{{escapeUrl seoText}}{{/if}}?w=3200 2x"
-                media="(min-width: 1280px)">
-
-        <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                seoText}}{{/if}}.webp?w=1280 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl
-                image.name}}{{#if seoText}}/{{escapeUrl seoText}}{{/if}}.webp?w=2560 2x"
-                media="(min-width: 1024px)"
-                type="image/webp">
-        <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                seoText}}{{/if}}?w=1280 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if
-                seoText}}/{{escapeUrl seoText}}{{/if}}?w=2560 2x"
-                media="(min-width: 1024px)">
-
-        <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                seoText}}{{/if}}.webp?w=1024 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl
-                image.name}}{{#if seoText}}/{{escapeUrl seoText}}{{/if}}.webp?w=2048 2x"
-                media="(min-width: 768px)"
-                type="image/webp">
-        <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                seoText}}{{/if}}?w=1024 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if
-                seoText}}/{{escapeUrl seoText}}{{/if}}?w=2048 2x"
-                media="(min-width: 768px)">
-
-        <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                seoText}}{{/if}}.webp?w=768 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl
-                image.name}}{{#if seoText}}/{{escapeUrl seoText}}{{/if}}.webp?w=1536 2x"
-                media="(max-width: 768px)"
-                type="image/webp">
-        <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                seoText}}{{/if}}?w=768 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if
-                seoText}}/{{escapeUrl seoText}}{{/if}}?w=1536 2x"
-                media="(max-width: 768px)">
-
-        <img src="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                seoText}}{{/if}}?w=1600"
-             srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                     seoText}}{{/if}}.webp?w=1600 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl
-                     image.name}}{{#if seoText}}/{{escapeUrl seoText}}{{/if}}.webp?w=3200 2x,
-             //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl image.name}}{{#if seoText}}/{{escapeUrl
-                     seoText}}{{/if}}?w=1600 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{escapeUrl
-                     image.name}}{{#if seoText}}/{{escapeUrl seoText}}{{/if}}?w=3200 2x"
-             class="amp-dc-image-pic" {{#if imageAltText}} alt="{{imageAltText}}" {{/if}}/>
-    {{/roundelProperties}}
-</picture>
+                <img class="owl-lazy" src="https://{{image.defaultHost}}/i/sw/{{escapeUrl image.name}}_1440{{#if seoText}}/{{escapeUrl
+                seoText}}{{/if}}?w=1440{{#getRoundelAnchor roundel.0. "desktop"}}{{/getRoundelAnchor}}" alt="{{imageAltText}}">
+        </picture>
+</section>

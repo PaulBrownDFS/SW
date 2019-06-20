@@ -207,7 +207,8 @@
 
                 return style;
             });
-
+            
+            // Not used in SW 
             Handlebars.registerHelper('roundelConfig', function (roundel) {
                 if (
                     roundel &&
@@ -253,6 +254,7 @@
                 }
             });
 
+            // Not used in SW 
             Handlebars.registerHelper('bannerRoundel', function (roundel, options) {
                 if (
                     roundel &&
@@ -362,8 +364,72 @@
                 }
             });
 
-            Handlebars.registerHelper('json', function (context) {
-                return JSON.stringify(context);
+            // (((((***** Sofa WorkShop Roundel Layer Param Builder v1.0 (Paul Brown@DFS) *****))))))
+
+            Handlebars.registerHelper('getRoundelAnchor', function (roundel, context, device) {
+
+                var roundelParams = '&layer1=[anchor=';
+                
+;                if(device == 'mobile') {
+
+                    // Mobile & Smaller Screen Tablets 
+
+                  var roundelPos = roundel.roundelPosition_m.split(' '),
+                       roundelAnchor = roundelPos[0][0].toUpperCase() + roundelPos[1][0].toUpperCase();
+                        roundelParams += roundelAnchor;
+
+                        // Add offsets positioning..
+
+                        roundelParams += '&' + (roundelPos[0] !== 'middle' ? roundelPos[0] : 'top') + '=' + roundel.XAxisOffset_m + '%';
+                        roundelParams += '&' + (roundelPos[1] !== 'center' ? roundelPos[1] : 'left') + '=' + roundel.YAxisOffset_m + '%';
+
+                        // add roundel image src
+
+                        if (typeof (roundel.roundel.name) !== 'undefined') {
+                            roundelParams += '&src=/i/sw/' + roundel.roundel.name;
+                        }
+
+                        // Add Roundel Size Over-ride If Its required.
+
+                        if (typeof (roundel.roundelSize_m) !== 'undefined') {
+                            var roundelSize = roundel.roundelSize_m;
+                            roundelParams += '&w=' + roundelSize;
+                        }
+                    
+                } else {
+
+                    // Desktop Screen Sizes...
+
+                    var roundelPos = roundel.roundelPosition_d.split(' '),
+                         roundelAnchor = roundelPos[0][0].toUpperCase() + roundelPos[1][0].toUpperCase();
+
+                         
+                        roundelParams += roundelAnchor;
+
+                         // Add offsets positioning..
+
+                         roundelParams += '&' + (roundelPos[0] !== 'middle' ? roundelPos[0]  :  'top') +'=' + roundel.XAxisOffset_d + '%';
+                         roundelParams += '&' + (roundelPos[1] !== 'center' ? roundelPos[1]  : 'left') +'=' + roundel.YAxisOffset_d + '%';
+
+                         // add roundel image src
+
+                         if (typeof (roundel.roundel.name) !== 'undefined') {
+                            roundelParams += '&src=/i/sw/' + roundel.roundel.name;
+                         }
+                         
+                         // Add Roundel Size Over-ride If Its required.
+
+                          if(typeof (roundel.roundelSize_d) !== 'undefined') {
+                                var roundelSize = roundel.roundelSize_d;
+                                roundelParams += '&w=' + roundelSize;
+                          }
+                    
+                }
+                
+                // Close Layer 
+                roundelParams += ']';
+                return roundelParams;
+                
             });
 
             Handlebars.registerHelper('roundelProperties', function (opts) {
