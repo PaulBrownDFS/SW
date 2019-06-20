@@ -380,8 +380,8 @@
 
                         // Add offsets positioning..
 
-                        roundelParams += '&' + (roundelPos[0] !== 'middle' ? roundelPos[0] : 'top') + '=' + roundel.XAxisOffset_m + '%';
-                        roundelParams += '&' + (roundelPos[1] !== 'center' ? roundelPos[1] : 'left') + '=' + roundel.YAxisOffset_m + '%';
+                        roundelParams += '&' + (roundelPos[0] !== 'middle' ? roundelPos[0] : 'left') + '=' + roundel.XAxisOffset_m + '%';
+                        roundelParams += '&' + (roundelPos[1] !== 'center' ? roundelPos[1] : 'top') + '=' + roundel.YAxisOffset_m + '%';
 
                         // add roundel image src
 
@@ -393,7 +393,7 @@
 
                         if (typeof (roundel.roundelSize_m) !== 'undefined') {
                             var roundelSize = roundel.roundelSize_m;
-                            roundelParams += '&w=' + roundelSize;
+                                  roundelParams += '&w=' + roundelSize;
                         }
                     
                 } else {
