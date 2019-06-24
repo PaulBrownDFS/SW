@@ -1,4 +1,4 @@
-                    <div class="slide {{cssStyle}} slide{{@index}}">
+                    <div class="slide {{cssStyle}} slide_{{slideName}}">
                         <div class="overlay-container">
                             <div class="slide-overlay">
                                 <div class="slide-text-1">
@@ -16,9 +16,8 @@
                         <a href="{{button.hrefValue}}">
                         {{#each slideImage}}{{templateChooser this}}{{/each}}
                         </a>
-
                         <style>
-                                    #HPCarousel  div.slide{{@index}} div.overlay-container .slide-overlay {
+                                    #HPCarousel  div.slide_{{slideName}} div.overlay-container .slide-overlay {
                                     bottom: {{#if textPositionBottom}}{{textPositionBottom}}px;{{else}}125px;{{/if}}
                                     left: {{#if textPositionLeft}}{{textPositionLeft}}px;{{else}}125px;{{/if}}
                                     }
