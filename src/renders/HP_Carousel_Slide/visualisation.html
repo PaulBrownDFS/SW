@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>homepage_carousel_slide</title>
+    <title>HP_Carousel_Slide</title>
 
     <link rel="stylesheet"
           href="{VISUALIZATION_BASEPATH}/renders/image/image.min.css"/>
@@ -20,17 +20,17 @@
 </head>
 <body>
 
-<div class="js_homepage_carousel_slide_wrap"></div>
+<div class="js_HP_Carousel_Slide_wrap"></div>
 <link rel="stylesheet"
-    href="{VISUALIZATION_BASEPATH}/renders/homepage_carousel_slide/homepage_carousel_slide.min.css" />
+    href="{VISUALIZATION_BASEPATH}/renders/HP_Carousel_Slide/HP_Carousel_Slide.min.css" />
 
 <script src="{VISUALIZATION_BASEPATH}/reusable/cms-javascript-sdk.min.js"></script>
 <script src="{VISUALIZATION_BASEPATH}/reusable/handlebars.min.js"></script>
 <script src="{VISUALIZATION_BASEPATH}/reusable/utils.js"></script>
 <script src="{VISUALIZATION_BASEPATH}/reusable/handlebars_helpers.js"></script>
 
-<script src="{VISUALIZATION_BASEPATH}/renders/homepage_carousel_slide/acc-template-image.min.js"></script>
-<script src="{VISUALIZATION_BASEPATH}/renders/homepage_carousel_slide/acc-template-homepage_carousel_slide.min.js"></script>
+<script src="{VISUALIZATION_BASEPATH}/renders/HP_Carousel_Slide/acc-template-image.min.js"></script>
+<script src="{VISUALIZATION_BASEPATH}/renders/HP_Carousel_Slide/acc-template-HP_Carousel_Slide.min.js"></script>
 
 <script>
 
@@ -61,8 +61,8 @@
         callback: function (data) {
 
             pbr = data[0];
-            var template = Handlebars.template(AmpCa.templates['acc-template-homepage_carousel_slide']);
-            document.querySelectorAll(".js_homepage_carousel_slide_wrap")[0].innerHTML = template(data[0]);
+            var template = Handlebars.template(AmpCa.templates['acc-template-HP_Carousel_Slide']);
+            document.querySelectorAll(".js_HP_Carousel_Slide_wrap")[0].innerHTML = template(data[0]);
         },
         formatData: function (data) {
             return amp.inlineContent(JSON.parse(data));
