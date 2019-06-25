@@ -214,6 +214,8 @@ div .overlay-container .slide-overlay .slide-text-1 h2 {
     bottom: 10%;
     left: 7.5%;
     text-align: center;
+    padding: 0;
+    width: 85%;
   }
 }
 
