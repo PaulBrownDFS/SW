@@ -503,6 +503,14 @@ gulp.task('minify_reusable', function () {
         .pipe(gulp.dest(reusable_dist)); // dist/reusable/all
 });
 
+// Paul's Task to minify all Carousel templates into one template file.
+gulp.task('carousel_templates', function(){
+    return gulp.src('./dist/renders/HP_Carousel/*.js')
+        .pipe(concat('carouselTemplates.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./dist/renders/HP_Carousel/compiled'));
+});
+
 gulp.task('default', ['watch', 'server']);
 
 
