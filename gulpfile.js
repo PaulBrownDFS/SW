@@ -35,6 +35,7 @@ var excludeReusable = {
 };
 
 var reusable = './dist/reusable/*.js';
+var reusable_dist = './dist/reusable/all';
 
 var replace = function () {
     return es.map(function (file, cb) {
@@ -346,7 +347,8 @@ gulp.task('renders-files-copy', function () {
     return gulp
         .src([
             'src/renders/**/visualisation.html',
-            'src/renders/**/templates/*.html'
+            'src/renders/**/templates/*.html',
+            'src/renders/**/js/*.js'
         ])
         .pipe(replaceVisualization())
         .pipe(
@@ -455,7 +457,8 @@ gulp.task(
         'copy-icons',
         'addLoryLicense',
         'addShowdownLicense',
-        'reusable-js-min'
+        'reusable-js-min',
+        'minify_reusable'
     ],
     function () {
     }
@@ -490,4 +493,18 @@ gulp.task('watch', ['buildAll'], function () {
     });
 });
 
+// Paul's Task to minify all Assets in reusable folder into one file, excluding lory and showdown.js
+gulp.task('minify_reusable', function () {
+    return gulp.src([reusable, '!./dist/reusable/showdown.min.js', '!./dist/reusable/lory.js'])
+        .pipe(concat('dynamicContent.js'))
+        .pipe(gulp.dest(reusable_dist))
+        .pipe(rename('dynamicContent.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest(reusable_dist)); // dist/reusable/all
+});
+
 gulp.task('default', ['watch', 'server']);
+
+
+
+

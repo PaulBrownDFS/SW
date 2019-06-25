@@ -52,7 +52,7 @@
                 console.warn('Param: ' + x + ' not found');
             }
         }
-        var url = 'https://' + paramsObj.vse + '/cms/content/query?fullBodyObject=true&scope=tree&store=any&query=%7B"sys.iri":"http://content.cms.amplience.com/' + paramsObj.content + '"%7D&v=' + Date.now();
+        var url = 'https://' + paramsObj.vse + '/cms/content/query?fullBodyObject=true&scope=tree&store=sw&query=%7B"sys.iri":"http://content.cms.amplience.com/' + paramsObj.content + '"%7D&v=' + Date.now();
         return url;
     }
 

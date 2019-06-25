@@ -19,77 +19,23 @@
 
 <div class="js_HP_Carousel_wrap" style="margin:0 auto;"></div>
 
+<script src="https://code.jquery.com/jquery-3.2.1.js" sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" anonymous">
+</script>
 
 <script src="https://paulbrowndfs.github.io/SW/dist/reusable/cms-javascript-sdk.min.js"></script>
 <script src="https://paulbrowndfs.github.io/SW/dist/reusable/handlebars.min.js"></script>
 <script src="https://paulbrowndfs.github.io/SW/dist/reusable/utils.js"></script>
 
 <!-- Helpers -->
-<script src="https://code.jquery.com/jquery-3.2.1.js" sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" anonymous">
-</script>
 <script src="https://paulbrowndfs.github.io/SW/dist/reusable/handlebars_helpers.js"></script>
-<script src="https://paulbrowndfs.github.io/SW/dist/renders/HP_Carousel/carouselHelper.js"></script>
-
 
 <!-- Templates -->
 <script src="https://paulbrowndfs.github.io/SW/dist/renders/HP_Carousel/acc-template-HP_Carousel.min.js"></script>
 <script src="https://paulbrowndfs.github.io/SW/dist/renders/HP_Carousel/acc-template-HP_Carousel_Slide.min.js"></script>
 <script src="https://paulbrowndfs.github.io/SW/dist/renders/HP_Carousel/acc-template-image.min.js"></script>
 
-<script>
-    function getQueryVar(params) {
-        var paramsObj = {};
-        var currentParam = null;
+<!-- Owl Carousel Init Code-->
+<script src="https://paulbrowndfs.github.io/SW/dist/renders/HP_Carousel/carouselHelper.js"></script>
 
-        for (var x = 0; x < params.length; x++) {
-            currentParam = window.location.href.match(new RegExp(params[x] + "=([a-zA-Z0-9-\._]+)"));
-            if (currentParam && currentParam.length > 1) {
-                paramsObj[params[x]] = currentParam[1];
-            }
-
-            else {
-                console.warn('Param: ' + x + ' not found');
-            }
-        }
-        var url = 'https://' + paramsObj.vse + '/cms/content/query?fullBodyObject=true&scope=tree&store=any&query=%7B"sys.iri":"http://content.cms.amplience.com/' + paramsObj.content + '"%7D&v=' + Date.now();
-        return url;
-    }
-
-    Handlebars.partials = AmpCa.templates;
-
-    AmpCa.utils = new AmpCa.Utils();
-    Handlebars.partials['acc-template-HP_Carousel_Slide'] = AmpCa.templates['acc-template-HP_Carousel_Slide'];
-    Handlebars.partials['acc-template-image'] = AmpCa.templates['acc-template-image'];
-
-    AmpCa.utils.getCaData({
-        url: getQueryVar(['vse', 'content']),
-        callback: function (data) {
-
-            pbr = data[0];
-            var template = Handlebars.template(AmpCa.templates['acc-template-HP_Carousel']);
-            document.querySelectorAll(".js_HP_Carousel_wrap")[0].innerHTML = template(data[0]);
-
-                    console.log('Init Owl Carousel: ', true);
-
-                    $('.owl-carousel-hero').owlCarousel({
-                        dots: true,
-                        loop: true,
-                        margin: 0,
-                        nav: true,
-                        navText: ['', ''],
-                        lazyLoad: true,
-                        items: 1,
-                        animateOut: 'fadeOut',
-                        autoplay: true,
-                        autoplayTimeout: 6000,
-                        autoplayHoverPause: true
-                    });
-
-        },
-        formatData: function (data) {
-            return amp.inlineContent(JSON.parse(data));
-        }
-    });
-</script>
 </body>
 </html>
