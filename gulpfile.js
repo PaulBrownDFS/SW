@@ -2,6 +2,7 @@
 
 var es = require('event-stream');
 var gulp = require('gulp');
+var runSequence = require('run-sequence');
 var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
@@ -460,7 +461,9 @@ gulp.task(
         'reusable-js-min',
         'minify_reusable'
     ],
-    function () {
+    function (cb) {
+        runSequence(['carousel_templates', 'minify_reusable'],
+            cb);
     }
 );
 
@@ -494,7 +497,7 @@ gulp.task('watch', ['buildAll'], function () {
 });
 
 // Paul's Task to minify all Assets in reusable folder into one file, excluding lory and showdown.js
-gulp.task('minify_reusable', function () {
+gulp.task('minify_reusable' ,function() {
     return gulp.src([reusable, '!./dist/reusable/showdown.min.js', '!./dist/reusable/lory.js'])
         .pipe(concat('dynamicContent.js'))
         .pipe(gulp.dest(reusable_dist))
@@ -504,7 +507,7 @@ gulp.task('minify_reusable', function () {
 });
 
 // Paul's Task to minify all Carousel templates into one template file.
-gulp.task('carousel_templates', function(){
+gulp.task('carousel_templates' ,function(){
     return gulp.src('./dist/renders/HP_Carousel/*.js')
         .pipe(concat('carouselTemplates.js'))
         .pipe(uglify())
@@ -512,6 +515,7 @@ gulp.task('carousel_templates', function(){
 });
 
 gulp.task('default', ['watch', 'server']);
+
 
 
 
