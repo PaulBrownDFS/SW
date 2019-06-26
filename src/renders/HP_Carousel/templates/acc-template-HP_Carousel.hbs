@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-12">
 
-        <div id="owl-1" class="owl-carousel owl-carousel-hero">
+        <div id="{{#if SliderCSSIDName }}{{SliderCSSIDName}}{{else}}hpc-owl2{{/if}}" class="owl-carousel owl-carousel-hero">
                 {{#each slides}}{{templateChooser this}}{{/each}}
         </div>
       </div>
