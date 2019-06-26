@@ -136,8 +136,8 @@
 
     #HPCarousel .owl-item div .overlay-container .slide-overlay {
       position: absolute;
-      bottom: 10%;
-      left: 7.5%;
+      bottom: 10% !important;
+      left: 7.5% !important;
       text-align: center;
       z-index: 11;
       width: 85%;
