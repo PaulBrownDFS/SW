@@ -2,10 +2,11 @@
   <div class="container p-0">
     <div class="row">
       <div class="col-12">
-      
+      {{#with hpcarouselslot}}
         <div id="{{#if SliderCSSIDName }}{{SliderCSSIDName}}{{else}}hpc-owl2{{/if}}" class="owl-carousel owl-carousel-hero">
                 {{#each slides}}{{templateChooser this}}{{/each}}
         </div>
+        {{/with}}
 
       </div>
     </div>

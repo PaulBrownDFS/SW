@@ -348,6 +348,7 @@ gulp.task('renders-files-copy', function () {
     return gulp
         .src([
             'src/renders/**/visualisation.html',
+            'src/renders/**/hpcpreview.html',
             'src/renders/**/templates/*.html',
             'src/renders/**/js/*.js'
         ])
