@@ -400,13 +400,18 @@ d.push(e),this.push(this.source.functionCall("container.invokePartial","",d))},a
 
             Handlebars.registerHelper('getRoundelAnchor', function (roundel, context, device) {
 
-                if(typeof(roundel) === 'undefined') {
-                    return false;
+                if (typeof (roundel) === 'undefined') {
+                    return '';
                 }
 
                 var roundelParams = '&layer1=[anchor=';
                 
                 if(device == 'mobile') {
+
+                    if(typeof(roundel.roundelPosition_m) === 'undefined') {
+                        console.warn('No Roundel Position Selected!');
+                        return '';
+                    }
 
                     // Mobile & Smaller Screen Tablets 
 
@@ -434,7 +439,12 @@ d.push(e),this.push(this.source.functionCall("container.invokePartial","",d))},a
                     
                 } else {
 
-                    // Desktop Screen Sizes...
+                    // Desktop Roundel
+
+                     if (typeof (roundel.roundelPosition_d) === 'undefined') {
+                         console.warn('No Roundel Position Selected!');
+                         return '';
+                     }
 
                     var roundelPos = roundel.roundelPosition_d.split(' '),
                          roundelAnchor = roundelPos[0][0].toUpperCase() + roundelPos[1][0].toUpperCase();
