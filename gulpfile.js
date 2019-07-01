@@ -292,6 +292,33 @@ gulp.task('renders-sass', function () {
     );
 });
 
+gulp.task('render-sass-prod', function () {
+    return (
+        gulp
+        .src('src/renders/**/sass/production/*.scss')
+        .pipe(
+            sass({
+                outputStyle: 'compressed'
+            }).on('error', sass.logError)
+        )
+        .pipe(
+            autoprefixer({
+                browsers: ['last 2 versions'],
+                cascade: false
+            })
+        )
+        .pipe(
+            rename(function (path) {
+                name = path.dirname.slice(0, path.dirname.indexOf('sass') - 1);
+                path.dirname = name + '/package/prod/css/';
+                path.basename = name  + '.min';
+            })
+        )
+        
+        .pipe(gulp.dest('dist/renders'))
+    );
+});
+
 gulp.task('renders-templates', function () {
     return gulp
         .src('src/renders/**/templates/*.hbs')
@@ -405,15 +432,15 @@ gulp.task('copy-node-modules', function () {
         .pipe(gulp.dest('dist/reusable'));
 });
 
-gulp.task('addLoryLicense', ['copy-node-modules'], function () {
-    return gulp
-        .src('node_modules/lory.js/LICENSE')
-        .pipe(insert.prepend('/*'))
-        .pipe(insert.append('*/'))
-        .pipe(addSrc.append('dist/reusable/lory.min.js'))
-        .pipe(concat('lory.min.js'))
-        .pipe(gulp.dest('dist/reusable'));
-});
+// gulp.task('addLoryLicense', ['copy-node-modules'], function () {
+//     return gulp
+//         .src('node_modules/lory.js/LICENSE')
+//         .pipe(insert.prepend('/*'))
+//         .pipe(insert.append('*/'))
+//         .pipe(addSrc.append('dist/reusable/lory.min.js'))
+//         .pipe(concat('lory.min.js'))
+//         .pipe(gulp.dest('dist/reusable'));
+// });
 
 gulp.task('addShowdownLicense', ['copy-node-modules'], function () {
     return gulp
@@ -441,6 +468,7 @@ gulp.task(
     [
         'renders-html',
         'renders-sass',
+        'render-sass-prod',
         'renders-templates',
         'renders-js-copy',
         'renders-files-copy',
@@ -457,7 +485,7 @@ gulp.task(
         'renders-build',
         'copy-node-modules',
         'copy-icons',
-        'addLoryLicense',
+       // 'addLoryLicense',
         'addShowdownLicense',
         'reusable-js-min',
         'minify_reusable'
