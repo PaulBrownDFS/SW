@@ -4,15 +4,17 @@
 var dataSlot = document.getElementsByClassName('js_HP_Carousel_wrap')[0],
       slot_ID = dataSlot.slotId  ||  '3aef0b44-2608-4d37-b413-e9fac1240cd2';
 
-var contentDeliveryUrl = "//" + getQueryVar('api') +
+var api = getQueryVar('api');
+
+var contentDeliveryUrl = "//" + api +
   "/cms/content/query?fullBodyObject=true&query=" +
   encodeURIComponent(JSON.stringify({
     "sys.iri": "http://content.cms.amplience.com/" + slot_ID 
   })) +
-  "&scope=tree&store=store";
+  "&scope=tree&store=sw";
 
-console.log("This is the URL");
-console.log(contentDeliveryUrl);
+//console.log("This is the URL");
+//console.log(contentDeliveryUrl);
 
 
 var deliveryRequest = $.ajax({
@@ -64,8 +66,12 @@ function showErrorMessage(err) {
 
 function getQueryVar(variable) {
   var query = window.location.search.substring(1);
-  console.log('query');
-  console.log(query);
+  if(!query) {
+    // not api query string? lets use a fall back for general users of UAT2
+    query = "api=11okaxqbkdrm4151lw3s5nmfft-fancfubgvq-5q1n23s0q60180000121p745.staging.bigcontent.io";
+  }
+  //console.log('query');
+  //console.log(query);
 
   var vars = query.split('&');
   for (var i = 0; i < vars.length; i++) {

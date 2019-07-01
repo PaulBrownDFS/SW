@@ -384,6 +384,11 @@ gulp.task('renders-files-copy', function () {
             rename(function (path) {
                 var name = path.dirname.replace('/templates', '');
                 path.dirname = name + '/package';
+
+                if(path.dirname.indexOf('/js') > -1 ) {
+                    path.dirname = name ;
+                }
+                
             })
         )
         .pipe(gulp.dest('dist/renders'));
@@ -392,14 +397,14 @@ gulp.task('renders-files-copy', function () {
 gulp.task('renders-js-min', function (cb) {
     pump(
         [
-            gulp.src(['src/renders/**/js/*.js']),
-            //uglify(),
+            gulp.src(['src/renders/**/js/*.js'])
+             .pipe(uglify()),
             rename(function (path) {
                 name = path.dirname.slice(0, path.dirname.indexOf('js') - 1);
-                path.dirname = name;
-                path.basename = path.basename;
-                //+ '.min';
+                path.dirname = name + '/js';
+                path.basename = path.basename + '.min';
             }),
+            
             gulp.dest('dist/renders')
         ],
         cb
