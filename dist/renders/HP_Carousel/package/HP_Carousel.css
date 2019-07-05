@@ -11664,6 +11664,19 @@ table .displayed-attributes p a {
   background: #222;
 }
 
+/* Button Style 3 */
+#HPCarousel div .overlay-container .slide-overlay .slide-button.buttonStyle_3 {
+  background: #F75467;
+}
+
+#HPCarousel div .overlay-container .slide-overlay .slide-button.buttonStyle_3 a {
+  color: #fff;
+}
+
+#HPCarousel div .overlay-container .slide-overlay .slide-button.buttonStyle_3:hover {
+  background: #d84052;
+}
+
 #HPCarousel .slide-text-1 h2 span {
   font-family: 'NewBaskervilleW01-Itali';
 }
