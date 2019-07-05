@@ -7,14 +7,20 @@
                         <div class="overlay-container">
                             <div class="slide-overlay">
                                 <div class="slide-text-1">
-                                    <h2{{#if textColour}} style="color:{{textColour}}"{{/if}}>{{{header}}}</h2>
+                                    {{#if header}}
+                                        <h2{{#if textColour}} style="color:{{textColour}}"{{/if}}>{{{header}}}</h2>
+                                    {{/if}}
                                 </div>
                                 <div class="slide-text-2">
-                                <h4 {{#if textColour}} style="color:{{textColour}}"{{/if}}>{{{subheader}}} »</h4>
+                                    {{#if subheader}}
+                                         <h4 {{#if textColour}} style="color:{{textColour}}"{{/if}}>{{{subheader}}} »</h4>
+                                    {{/if}}
                                 </div>
-                                <div class="slide-button inline-button {{#if buttonStyle}}{{buttonStyle}}{{else}}defaultBtn{{/if}}" >
-                                    <a href="{{button.hrefValue}}">{{button.anchorText}}</a>
-                                </div>
+                                {{#if button.anchorText}}
+                                    <div class="slide-button inline-button {{#if buttonStyle}}{{buttonStyle}}{{else}}defaultBtn{{/if}}" >
+                                        <a href="{{button.hrefValue}}">{{button.anchorText}}</a>                              
+                                    </div>
+                                {{/if}}
                             </div>
                         </div>
 

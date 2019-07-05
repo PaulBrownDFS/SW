@@ -38,6 +38,10 @@ var excludeReusable = {
 var reusable = './dist/reusable/*.js';
 var reusable_dist = './dist/reusable/all';
 
+var production_src_js = './dist/reusable/all/*.min.js',
+       production_src_js_slot = './dist/renders/HP_Carousel/js/live_hpCarousel_slot.min.js';
+var production_src_css = './dist/renders/HP_Carousel/package/prod/css/*.css';
+
 var replace = function () {
     return es.map(function (file, cb) {
         var fileContent = file.contents.toString();
@@ -494,11 +498,10 @@ gulp.task(
         'copy-icons',
        // 'addLoryLicense',
         'addShowdownLicense',
-        'reusable-js-min',
-        'minify_reusable'
+        'reusable-js-min'
     ],
     function (cb) {
-        runSequence(['carousel_templates', 'minify_reusable'],
+        runSequence(['carousel_templates', 'minify_reusable', 'build_prod'],
             cb);
     }
 );
@@ -551,6 +554,19 @@ gulp.task('carousel_templates' ,function(){
 });
 
 gulp.task('default', ['watch', 'server']);
+
+gulp.task('production_copy',['minify_reusable'], function () {
+    return gulp.src([production_src_js_slot,production_src_js, production_src_css])
+        .pipe(gulp.dest('./dist/renders/HP_Carousel/compiled'))
+    });
+        
+gulp.task('build_prod', ['production_copy'], function(){
+    var src_path = "./dist/renders/HP_Carousel/compiled";
+    return gulp.src([src_path + '/dynamicContent.min.js', src_path + '/carouselTemplates.js', src_path + '/live_hpCarousel_slot.min.js'])
+        .pipe(concat('HP_Carousel_slot.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./dist/renders/HP_Carousel/compiled'));
+})
 
 
 
