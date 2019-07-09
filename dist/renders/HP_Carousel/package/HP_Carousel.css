@@ -11705,7 +11705,7 @@ table .displayed-attributes p a {
 #HPCarousel .owl-prev {
   left: 10px;
   right: unset;
-  background: url(https://www.sofaworkshop.com/images/header/arrow-left.svg) no-repeat !important;
+  background: none;
   background-position: 25px 17.5px !important;
   cursor: pointer;
   background-size: 10px !important;
@@ -11714,7 +11714,7 @@ table .displayed-attributes p a {
 #HPCarousel .owl-next {
   right: 10px;
   left: unset;
-  background: url(https://www.sofaworkshop.com/images/header/arrow-right.svg) no-repeat !important;
+  background: none;
   background-position: 25px 17.5px !important;
   cursor: pointer;
   background-size: 10px !important;
@@ -11811,6 +11811,15 @@ table .displayed-attributes p a {
 
 #HPCarousel button:focus {
   outline: none;
+}
+
+@media (min-width: 576px) {
+  #HPCarousel .owl-prev {
+    background: url(https://www.sofaworkshop.com/images/header/arrow-left.svg) no-repeat !important;
+  }
+  #HPCarousel .owl-next {
+    background: url(https://www.sofaworkshop.com/images/header/arrow-right.svg) no-repeat !important;
+  }
 }
 
 /* Over-ride global styles */
