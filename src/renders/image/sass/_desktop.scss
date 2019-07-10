@@ -1,18 +1,11 @@
-.amp-dc-image {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
+section.ampImageWrapper img {
   width: 100%;
-  display: block;
+  margin: 0 auto;
+  padding: 1%;
+  box-sizing: border-box;
+}
 
-  .amp-dc-image-pic {
-    display: block;
-  }
-
-  img {
-    width: 100%;
-    user-select: none;
-  }
+section.ampImageWrapper {
+  max-width: 1440px;
+  margin: 1% auto
 }

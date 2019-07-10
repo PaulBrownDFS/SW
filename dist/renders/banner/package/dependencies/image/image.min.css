@@ -1,1 +1,1 @@
-.amp-dc-image{margin:0;padding:0;position:relative;overflow:hidden;white-space:nowrap;width:100%;display:block}.amp-dc-image .amp-dc-image-pic{display:block}.amp-dc-image img{width:100%;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+section.ampImageWrapper img{width:100%;margin:0 auto;padding:1%;-webkit-box-sizing:border-box;box-sizing:border-box}section.ampImageWrapper{max-width:1440px;margin:1% auto}
